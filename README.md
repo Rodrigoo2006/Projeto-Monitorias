@@ -1,187 +1,90 @@
-🎓 Plataforma de Monitorias Acadêmicas – UNIRUY Wyden
+# Plataforma de Monitorias Acadêmicas – UniRuy Wyden
 
-Projeto Acadêmico • Engenharia de Software
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-6.0-darkgreen?logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-316192?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-Orchestration-1D63ED?logo=docker&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-Cloud-232F3E?logo=amazonaws&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-Web_Server-009639?logo=nginx&logoColor=white)
+![Gunicorn](https://img.shields.io/badge/Gunicorn-WSGI_Server-499848)
 
-📘 Engenharia de Software
+Aplicação Django para gestão de monitorias acadêmicas, com cadastro de monitores, divulgação de vagas e controle de inscrições.
 
-Alunos
+## Visão geral
 
-Aryane
-Rodrigo
+Sistema web com painel de monitores e portal público de monitorias. O projeto oferece:
 
-📚 Sobre o Projeto
+- autenticação de usuários;
+- cadastro e edição de monitorias;
+- gestão de inscrições e vagas;
+- painel restrito para monitores.
 
-Sistema web desenvolvido para gerenciamento de inscrições em monitorias acadêmicas da instituição UNIRUY Wyden.
+## Funcionalidades principais
 
-A Plataforma de Monitorias Acadêmicas foi desenvolvida com o objetivo de otimizar o gerenciamento de monitorias acadêmicas dentro da instituição UNIRUY Wyden, proporcionando uma solução moderna, organizada e eficiente para alunos, monitores e professores.
+- listagem pública de monitorias;
+- cadastro e login de monitores;
+- painel privado para gerenciamento de monitorias;
+- criação, edição e exclusão de monitorias;
+- controle de inscrições com limite de vagas;
+- proteção de acesso por proprietário.
 
-O sistema centraliza informações importantes relacionadas às monitorias, permitindo maior controle sobre horários, disciplinas, solicitações, acompanhamentos e comunicação acadêmica.
+## Tecnologias
 
-Além de facilitar processos internos, a plataforma permite que os alunos realizem inscrições em monitorias acadêmicas de forma simples e organizada, através de uma interface intuitiva, responsiva e acessível.
+- Python
+- Django 6
+- PostgreSQL
+- Docker & Docker Compose
+- Bootstrap 5
 
-🎯 Objetivos do Sistema
+## Estrutura principal
 
-Automatizar o gerenciamento de inscrições em monitorias acadêmicas;
-Facilitar o processo de inscrição dos alunos;
-Organizar disciplinas e vagas disponíveis;
-Permitir acompanhamento das inscrições realizadas;
-Melhorar a experiência acadêmica dos estudantes;
-Centralizar informações em um único ambiente digital.
+- `docs/` – documentação técnica, diagramas, relatórios e apresentações
+- `app/` – configuração do projeto, URLs e templates globais
+- `contas/` – autenticação e registro
+- `monitorias/` – gestão de monitorias e inscrições
+- `static/` – assets de CSS e imagens
+- `docker-compose.yml` – ambiente local
+- `docker-compose.prod.yml` – ambiente de produção
 
-🏗️ Funcionalidades Principais
+## Instalação local
 
-👨‍🎓 Área do Aluno
-
-Cadastro e autenticação;
-Visualização das monitorias disponíveis;
-Inscrição em monitorias;
-Consulta das disciplinas cadastradas;
-Acompanhamento das inscrições realizadas.
-
-👨‍🏫 Área do Monitor
-
-Visualização de inscrições;
-Acompanhamento de alunos inscritos;
-Gerenciamento das informações da monitoria;
-
-Registro de atividades.
-
-👨‍💼 Área Administrativa
-
-Gerenciamento de usuários;
-Cadastro de disciplinas;
-Controle das monitorias;
-Administração geral do sistema.
-
-💻 Tecnologias Utilizadas
-
-O projeto foi desenvolvido utilizando tecnologias modernas voltadas para aplicações web.
-
-Backend
-Python
-Django
-
-Frontend
-
-HTML5
-CSS3
-JavaScript
-Bootstrap
-
-Banco de Dados
-
-PostgreeSQL
-
-Ferramentas
-
-Git
-GitHub
-VS Code
-
-🧩 Arquitetura do Projeto
-
-O sistema segue uma arquitetura baseada no padrão MVC (Model-View-Controller), permitindo:
-
-Maior organização do código;
-Facilidade de manutenção;
-Escalabilidade do sistema;
-Separação de responsabilidades.
-
-📂 Estrutura do Projeto
-
-Estrutura base do sistema
-
-projeto-monitorias-uniruy/
-│
-├── app/
-├── templates/
-├── static/
-├── manage.py
-├── requirements.txt
-└── db.sqlite3
-
-⚙️ Como Executar o Projeto
-
-1. Clonar o repositório
-
-git clone https://github.com/seu-repositorio/projeto-monitorias-uniruy.git
-
-2. Acessar a pasta do projeto
-
+```bash
+git clone https://github.com/aryaneandrade/projeto-monitorias-uniruy.git
 cd projeto-monitorias-uniruy
-
-3. Criar ambiente virtual
-
 python -m venv venv
-
-4. Ativar ambiente virtual
-
-Windows
-
-venv\Scripts\activate
-
-Linux/Mac
-
 source venv/bin/activate
-
-5. Instalar dependências
-
 pip install -r requirements.txt
-
-6. Executar migrações
-
 python manage.py migrate
-
-7. Iniciar servidor
-
+python manage.py createsuperuser
 python manage.py runserver
+```
 
-🔒 Segurança
+Acesse: `http://127.0.0.1:8000/monitorias/`
 
-O sistema possui mecanismos básicos de segurança para proteção dos dados dos usuários:
-Autenticação de usuários;
-Controle de permissões;
-Proteção contra acesso não autorizado;
-Validação de formulários.
+## Execução com Docker
 
-📈 Benefícios da Plataforma
+```bash
+docker compose up -d --build
+```
 
-Organização acadêmica;
-Redução de processos manuais;
-Facilidade de acesso às informações;
-Melhor gerenciamento das monitorias;
-Ambiente digital centralizado.
+Acesse o serviço local configurado em `http://127.0.0.1:8080/`.
 
-🧪 Possíveis Melhorias Futuras
+## Deploy AWS
 
-Integração com APIs institucionais;
-Sistema de notificações;
-Chat em tempo real;
-Dashboard administrativo;
-Relatórios avançados;
-Aplicativo mobile.
+O ambiente de produção utiliza:
 
-👥 Desenvolvedores do Projeto
+- Amazon EC2
+- Amazon RDS PostgreSQL
+- Nginx
+- Gunicorn
+- Docker Compose
 
-Desenvolvedores
+As configurações de ambiente são realizadas via arquivo `.env`
 
-Aryane
-Rodrigo
+## Observações
 
-🏫 Instituição
-
-UNIRUY Wyden
-
-🎓 Curso
-
-Engenharia de Software
-
-📄 Licença
-
-Este projeto foi desenvolvido exclusivamente para fins acadêmicos na disciplina de Engenharia de Software da UNIRUY Wyden.
-
-⭐ Considerações Finais
-
-A Plataforma de Monitorias Acadêmicas representa uma solução tecnológica voltada para melhoria da organização e eficiência no ambiente universitário.
-
-O projeto demonstra a aplicação prática de conceitos de Engenharia de Software, desenvolvimento web e gerenciamento de sistemas acadêmicos, contribuindo para a experiência dos estudantes e para a modernização dos processos institucionais.
+- Projeto configurado para PostgreSQL em `app/settings.py`.
+- Interface administrativa disponível em `/admin/`
+- Ambiente preparado para deploy em produção com Docker
