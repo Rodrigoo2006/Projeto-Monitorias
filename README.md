@@ -70,7 +70,7 @@ Bootstrap
 
 Banco de Dados
 
-Postgree
+PostgreeSQL
 
 Ferramentas
 
