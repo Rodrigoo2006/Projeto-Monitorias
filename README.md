@@ -1,6 +1,8 @@
-Plataforma de Monitorias Acadêmicas – UNIRUY Wyden
+🎓 Plataforma de Monitorias Acadêmicas – UNIRUY Wyden
 
-Engenharia de Software
+Projeto Acadêmico • Engenharia de Software
+
+📘 Engenharia de Software
 
 Alunos
 
@@ -9,6 +11,8 @@ Aryane
 Rodrigo
 
 📚 Sobre o Projeto
+
+Sistema web desenvolvido para gerenciamento de inscrições em monitorias acadêmicas da instituição UNIRUY Wyden.
 
 A Plataforma de Monitorias Acadêmicas foi desenvolvida com o objetivo de otimizar o gerenciamento de monitorias acadêmicas dentro da instituição UNIRUY Wyden, proporcionando uma solução moderna, organizada e eficiente para alunos, monitores e professores.
 
@@ -108,6 +112,8 @@ Separação de responsabilidades.
 
 📂 Estrutura do Projeto
 
+Estrutura base do sistema
+
 projeto-monitorias-uniruy/
 │
 ├── app/
@@ -117,7 +123,7 @@ projeto-monitorias-uniruy/
 ├── requirements.txt
 └── db.sqlite3
 
-⚙️ Instalação do Projeto
+⚙️ Como Executar o Projeto
 
 1. Clonar o repositório
 
@@ -191,7 +197,7 @@ Relatórios avançados;
 
 Aplicativo mobile.
 
-👥 Equipe do Projeto
+👥 Desenvolvedores do Projeto
 
 Desenvolvedores
 
@@ -199,11 +205,11 @@ Aryane
 
 Rodrigo
 
-Instituição
+🏫 Instituição
 
 UNIRUY Wyden
 
-Curso
+🎓 Curso
 
 Engenharia de Software
 
@@ -211,7 +217,7 @@ Engenharia de Software
 
 Este projeto foi desenvolvido exclusivamente para fins acadêmicos na disciplina de Engenharia de Software da UNIRUY Wyden.
 
-🚀 Considerações Finais
+⭐ Considerações Finais
 
 A Plataforma de Monitorias Acadêmicas representa uma solução tecnológica voltada para melhoria da organização e eficiência no ambiente universitário.
 
