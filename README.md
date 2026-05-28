@@ -7,7 +7,6 @@ Projeto Acadêmico • Engenharia de Software
 Alunos
 
 Aryane
-
 Rodrigo
 
 📚 Sobre o Projeto
@@ -23,15 +22,10 @@ Além de facilitar processos internos, a plataforma permite que os alunos realiz
 🎯 Objetivos do Sistema
 
 Automatizar o gerenciamento de inscrições em monitorias acadêmicas;
-
 Facilitar o processo de inscrição dos alunos;
-
 Organizar disciplinas e vagas disponíveis;
-
 Permitir acompanhamento das inscrições realizadas;
-
 Melhorar a experiência acadêmica dos estudantes;
-
 Centralizar informações em um único ambiente digital.
 
 🏗️ Funcionalidades Principais
@@ -39,21 +33,15 @@ Centralizar informações em um único ambiente digital.
 👨‍🎓 Área do Aluno
 
 Cadastro e autenticação;
-
 Visualização das monitorias disponíveis;
-
 Inscrição em monitorias;
-
 Consulta das disciplinas cadastradas;
-
 Acompanhamento das inscrições realizadas.
 
 👨‍🏫 Área do Monitor
 
 Visualização de inscrições;
-
 Acompanhamento de alunos inscritos;
-
 Gerenciamento das informações da monitoria;
 
 Registro de atividades.
@@ -61,11 +49,8 @@ Registro de atividades.
 👨‍💼 Área Administrativa
 
 Gerenciamento de usuários;
-
 Cadastro de disciplinas;
-
 Controle das monitorias;
-
 Administração geral do sistema.
 
 💻 Tecnologias Utilizadas
@@ -73,29 +58,24 @@ Administração geral do sistema.
 O projeto foi desenvolvido utilizando tecnologias modernas voltadas para aplicações web.
 
 Backend
-
 Python
-
 Django
 
 Frontend
 
 HTML5
-
 CSS3
-
 JavaScript
+Bootstrap
 
 Banco de Dados
 
-SQLite
+Postgree
 
 Ferramentas
 
 Git
-
 GitHub
-
 VS Code
 
 🧩 Arquitetura do Projeto
@@ -103,11 +83,8 @@ VS Code
 O sistema segue uma arquitetura baseada no padrão MVC (Model-View-Controller), permitindo:
 
 Maior organização do código;
-
 Facilidade de manutenção;
-
 Escalabilidade do sistema;
-
 Separação de responsabilidades.
 
 📂 Estrutura do Projeto
@@ -162,39 +139,26 @@ python manage.py runserver
 🔒 Segurança
 
 O sistema possui mecanismos básicos de segurança para proteção dos dados dos usuários:
-
 Autenticação de usuários;
-
 Controle de permissões;
-
 Proteção contra acesso não autorizado;
-
 Validação de formulários.
 
 📈 Benefícios da Plataforma
 
 Organização acadêmica;
-
 Redução de processos manuais;
-
 Facilidade de acesso às informações;
-
 Melhor gerenciamento das monitorias;
-
 Ambiente digital centralizado.
 
 🧪 Possíveis Melhorias Futuras
 
 Integração com APIs institucionais;
-
 Sistema de notificações;
-
 Chat em tempo real;
-
 Dashboard administrativo;
-
 Relatórios avançados;
-
 Aplicativo mobile.
 
 👥 Desenvolvedores do Projeto
@@ -202,7 +166,6 @@ Aplicativo mobile.
 Desenvolvedores
 
 Aryane
-
 Rodrigo
 
 🏫 Instituição
