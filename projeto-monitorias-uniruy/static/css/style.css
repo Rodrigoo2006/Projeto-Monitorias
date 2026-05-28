@@ -1,0 +1,114 @@
+:root {
+    --uniruy-purple: #88005b;
+    --bg-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar */
+
+.navbar .nav-link {
+    color: var(--uniruy-purple) !important;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.navbar.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.navbar .nav-user {
+    color: var(--uniruy-purple) !important;
+    font-weight: 800;
+}
+
+/* Hero */
+
+.hero-slide {
+    min-height: 240px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    padding: 40px 0;
+}
+
+.hero-slide::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(136, 0, 91, 0.92);
+}
+
+.hero-slide .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-estudantes {
+    background-image: url("../img/hero-estudantes.jpg");
+}
+
+.hero-monitor {
+    background-image: url("../img/hero-monitor.jpg");
+}
+
+.hero-slide h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero-slide .lead {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Busca */
+
+.search-container {
+    max-width: 950px;
+    margin-top: -70px;
+    position: relative;
+    z-index: 20;
+}
+
+/* Cards */
+
+.card-monitoria {
+    transition: 0.3s ease;
+}
+
+.card-monitoria:hover {
+    transform: translateY(-5px);
+}
+
+/* Botões */
+
+.btn-inscricao:hover {
+    background-color: rgba(255, 193, 7, 0.25) !important;
+    color: #212529 !important;
+    border: none !important;
+    font-weight: 200;
+}
