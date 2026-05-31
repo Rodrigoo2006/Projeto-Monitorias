@@ -14,6 +14,8 @@ Aplicação Django para gestão de monitorias acadêmicas, com cadastro de monit
 
 ## Visão geral
 
+Alunos:Aryane,Rodrigo
+
 Sistema web com painel de monitores e portal público de monitorias. O projeto oferece:
 
 - autenticação de usuários;
