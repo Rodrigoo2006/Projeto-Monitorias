@@ -12,9 +12,9 @@
 
 Aplicação Django para gestão de monitorias acadêmicas, com cadastro de monitores, divulgação de vagas e controle de inscrições.
 
-## Visão geral
-
 Alunos:Aryane,Rodrigo
+
+## Visão geral
 
 Sistema web com painel de monitores e portal público de monitorias. O projeto oferece:
 
